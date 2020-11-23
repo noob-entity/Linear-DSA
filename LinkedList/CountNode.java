@@ -4,7 +4,7 @@ class CountNodes
     public static int getCount(Node head)
     {
         
-        //Code here
+     
         Node temp=head;
         int count=0;
         while(temp!=null){

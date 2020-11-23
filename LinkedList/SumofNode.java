@@ -1,4 +1,4 @@
-class SumOfNode
+class SumofNode
 {
    
     void Sum(Node head)
