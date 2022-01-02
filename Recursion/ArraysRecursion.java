@@ -45,9 +45,6 @@ public static int lastIndex(int[] arr, int idx, int x) {
     if (idx ==arr.length)
         return -1;
 
-
-
-    
     int isa=lastIndex(arr, idx +1, x);
     if (isa!=-1)
         return isa;

@@ -1,40 +1,34 @@
-public static LinkedList mergeTwoSortedLists(LinkedList l1, LinkedList l2) {
-    LinkedList ml = new LinkedList();
-
-    Node one = l1.head;
-    Node two = l2.head;
-    while (one != null && two != null) {
-      if (one.data < two.data) {
-        ml.addLast(one.data);
-        one = one.next;
-      } else {
-        ml.addLast(two.data);
-        two = two.next;
-      }
+public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    if(l1==null||l2==null) 
+        return l1==null?l2:l1;
+        
+    ListNode dummy=new ListNode(-1);
+    ListNode c1=l1,c2=l2,pre = dummy;
+    while(c1!=null&&c2!=null){
+        if(c1.val<=c2.val){
+            pre.next=c1;
+            c1=c1.next;
+        } else{
+            pre.next=c2;
+            c2=c2.next;
+            
+        }
+        pre=pre.next;
     }
+     pre.next = c1 != null ? c1 : c2;
+         ListNode head = dummy.next;
+    dummy.next = null;
+    return head;
+}
 
-    while (one != null) {
-      ml.addLast(one.data);
-      one = one.next;
-    }
 
-    while (two != null) {
-      ml.addLast(two.data);
-      two = two.next;
-    }
+public static ListNode mergeSort(ListNode head) {
+    if (head == null || head.next == null)
+      return head;
 
-    return ml;
-  }
+  ListNode mid = midNode(head);
+  ListNode nHead = mid.next;
+  mid.next = null;
 
-  public static LinkedList mergeSort(Node head, Node tail){
-    if(head==tail){
-        LinkedList bl=new LinkedList();
-        bl.addFirst(head.data);
-        return bl;
-    }
-    Node mid=midNode(head,tail);
-    LinkedList ll=mergeSort(head,mid);
-    LinkedList rl=mergeSort(mid.next,tail);
-    LinkedList ans=mergeTwoSortedLists(ll,rl);
-    return ans;
-  }
+  return mergeTwoLists(mergeSort(head), mergeSort(nHead));
+}
