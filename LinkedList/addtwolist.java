@@ -1,3 +1,10 @@
+/**
+ * addtwolist
+ */
+public class addtwolist {
+
+    
+
 public static int addHelper(Node one,int pv1,Node two,int pv2,LinkedList res){
     if(one==null&&two==null)
     return 0;
@@ -28,4 +35,5 @@ public static LinkedList addTwoLists(LinkedList one, LinkedList two) {
   }
   return res;
   
+}
 }

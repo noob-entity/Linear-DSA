@@ -1,3 +1,10 @@
+/**
+ * Reverse
+ */
+public class Reverse {
+
+  
+
 //pointer iterative
 public void reversePI(){
     Node curr=head;
@@ -75,3 +82,4 @@ private void reversePRHelper(Node node){
     left=head;
     reverseHelper(head,0);
   }
+}

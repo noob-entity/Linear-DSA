@@ -1,4 +1,10 @@
 //Print Decreasing
+/**
+ * Basic
+ */
+public class Basic {
+
+    
 
 public static void printDecreasing(int n){
     if(n==0)
@@ -41,7 +47,8 @@ public static int power(int x, int n){
   return p*x;
 }
 //Power-logarithmic
-public static int power(int x, int n) {
+public static int powerr
+(int x, int n) {
     if (n == 0) {
         return 1;
     }
@@ -77,4 +84,5 @@ public static void toh(int n, int t1, int t2, int t3) {
     System.out.println(n+"["+t1+" -> "+t2+"]");
     toh(n-1,t3,t2,t1);
 
+}
 }

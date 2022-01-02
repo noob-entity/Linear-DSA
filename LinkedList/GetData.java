@@ -1,3 +1,10 @@
+/**
+ * GetData
+ */
+public class GetData {
+
+    
+
 public int getFirst(){
     if(head==null) {
         System.out.println("List is empty");
@@ -30,4 +37,5 @@ public int getAt(int idx){
     }
     return temp.data;
   
+}
 }

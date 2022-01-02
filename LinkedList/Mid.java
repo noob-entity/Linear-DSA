@@ -1,3 +1,10 @@
+/**
+ * Mid
+ */
+public class Mid {
+
+    
+
 public int mid(){
         
     Node slow=head;
@@ -8,4 +15,4 @@ public int mid(){
     }
     return slow.data;
     
-  }
+  }}

@@ -1,4 +1,7 @@
-    public static boolean isDuplicate(String str){
+import java.util.Stack;
+
+public class Balanced{
+   public static boolean isDuplicate(String str){
         Stack<Character> st=new Stack<>();
         for(int i=0;i<str.length();i++){
             if(str.charAt(i)=='('||str.charAt(i)=='['||str.charAt(i)=='{'){
@@ -26,3 +29,4 @@
         return true;
         else return false;
     }
+}

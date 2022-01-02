@@ -1,3 +1,10 @@
+/**
+ * FoldList
+ */
+public class FoldList {
+
+  
+
 Node left;
 public void foldHelper(Node right, int count){
     if(right==null) return;
@@ -35,4 +42,4 @@ public void foldHelper(Node right, int count){
     
     }
 
-}
+}}

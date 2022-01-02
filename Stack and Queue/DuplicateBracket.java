@@ -1,4 +1,10 @@
-  public static  boolean isDuplicate(String str){
+import java.util.Stack;
+
+public class DuplicateBracket {
+ 
+     
+ 
+ public static  boolean isDuplicate(String str){
         Stack<Character> st=new Stack<>();
         //st.push(str.charAt(0));
         int i=0;
@@ -26,3 +32,4 @@
     
     return false;
     }
+}

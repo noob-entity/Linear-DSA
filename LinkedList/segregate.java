@@ -1,3 +1,10 @@
+/**
+ * segregate
+ */
+public class segregate {
+
+    
+
 public static ListNode segregateEvenOdd(ListNode head) {
     if(head==null||head.next==null)
     return null;
@@ -48,4 +55,5 @@ public static ListNode segregate01(ListNode head) {
     head=zero.next;
     zero.next=one.next=null;
     return head;
+}
 }

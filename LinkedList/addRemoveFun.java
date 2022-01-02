@@ -1,3 +1,10 @@
+/**
+ * addRemoveFun
+ */
+public class addRemoveFun {
+
+  
+
 void addLast(int val) {
     size++;
     Node nnode=new Node();
@@ -98,3 +105,4 @@ public void removeFirst(){
        
      }
    }
+  }

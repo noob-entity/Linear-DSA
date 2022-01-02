@@ -1,3 +1,10 @@
+/**
+ * Kthlast
+ */
+public class Kthlast {
+
+    
+
 public int kthFromLast(int k){
     Node slow=head;
     Node fast=head;
@@ -11,3 +18,4 @@ public int kthFromLast(int k){
     }
     return slow.data;
   }
+}

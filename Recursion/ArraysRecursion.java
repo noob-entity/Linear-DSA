@@ -1,4 +1,11 @@
 //Display Array
+/**
+ * ArraysRecursion
+ */
+public class ArraysRecursion {
+
+    
+
 public static void displayArr(int[] arr, int idx) {
     if(idx==arr.length)
     return;
@@ -70,4 +77,5 @@ public static int[] allIndices(int[] arr, int x, int idx, int count) {
     }
 
   return rr;
+}
 }

@@ -1,4 +1,13 @@
- public static int[] solve(int[] arr){
+import java.util.Stack;
+
+/**
+ * NGE
+ */
+public class NGE {
+
+    
+
+public static int[] solve(int[] arr){
    // solve
    int[] res=new int[arr.length];
    Stack<Integer> st=new Stack<>();
@@ -20,3 +29,4 @@
    }
    return res;
  }
+}

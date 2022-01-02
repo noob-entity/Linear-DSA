@@ -1,3 +1,10 @@
+/**
+ * quicksort
+ */
+public class quicksort {
+
+  
+
 public static ListNode segregateOnLastIndex(ListNode head) {
     if(head==null)
     return null;
@@ -48,3 +55,4 @@ public static ListNode segregateOverPivot(ListNode head, int pivotIdx) {
     head=small.next;
     return head;
   }
+}

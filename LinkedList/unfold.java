@@ -1,3 +1,10 @@
+/**
+ * unfold
+ */
+public class unfold {
+
+    
+
 public static void unfold(ListNode head) {
     if(head==null||head.next==null) return;
      
@@ -16,4 +23,5 @@ public static void unfold(ListNode head) {
      nHead = reverse(nHead);
      c1.next = nHead;
 
+}
 }

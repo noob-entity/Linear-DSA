@@ -1,3 +1,10 @@
+/**
+ * removenth
+ */
+public class removenth {
+
+    
+
 public static ListNode removeNthFromEnd(ListNode head, int n) {
     if(head==null) return null;
     ListNode fast=head,slow=head;
@@ -18,3 +25,4 @@ public static ListNode removeNthFromEnd(ListNode head, int n) {
     slow.next=slow.next.next;
     return head;
   }
+}
