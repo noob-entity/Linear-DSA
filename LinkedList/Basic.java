@@ -1,3 +1,10 @@
+/**
+ * Basic
+ */
+public class Basic {
+
+    
+
 public void display(){
     // write code here
     Node temp=head;
@@ -7,3 +14,4 @@ public void display(){
     }
      System.out.println();
   }
+}
